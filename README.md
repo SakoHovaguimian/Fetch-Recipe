@@ -41,7 +41,6 @@ Additionally, I would have preferred to rely on an industry-standard image-cachi
 ### Weakest Part of the Project: What do you think is the weakest part of your project?
 ---------------------------------------------------------------------------------------------------------------------
 The biggest shortcoming is the memory usage incurred by caching all images at once. Ideally, I would implement paging or a more efficient image-loading strategy—especially if the endpoint supported pagination.
-I also would have liked to load images in a separate task group or queue to keep the UI responsive and allow images to “pop in” once they are ready. Another area for improvement is adding more documentation for the services and view models.
 
 ### Additional Information: Is there anything else we should know? Feel free to share any insights or constraints you encountered.
 ---------------------------------------------------------------------------------------------------------------------
