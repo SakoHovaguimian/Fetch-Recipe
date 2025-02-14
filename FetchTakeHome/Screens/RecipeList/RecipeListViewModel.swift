@@ -41,7 +41,7 @@ final class RecipeListViewModel: ObservableObject {
             
             do {
                 
-                let recipes = try await self?.fetchRecipes()
+                let recipes = try await self?.apiService.getRecipes()
                 try! await Task.sleep(for: .seconds(3))
                 
                 await MainActor.run { [weak self] in
@@ -89,61 +89,6 @@ final class RecipeListViewModel: ObservableObject {
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url)
         }
-        
-    }
-    
-    // MARK: - Private -
-    
-    private func fetchRecipes() async throws -> [Recipe] {
-        
-        var recipes = try await self.apiService.getRecipes()
-        
-        for recipe in recipes {
-            
-            let image = try await self.fetchImageForRecipe(recipe)
-            
-            if let recipeIndex = recipes.firstIndex(of: recipe) {
-                recipes[recipeIndex].image = image
-            }
-            
-        }
-        
-        return recipes
-        
-    }
-    
-    private func fetchImageForRecipe(_ recipe: Recipe) async throws -> UIImage? {
-        
-        var url: String?
-        
-        if let largeImageURL = recipe.photoURLLarge {
-            url = largeImageURL
-        }
-        
-        if let smallImageURL = recipe.photoURLSmall {
-            url = smallImageURL
-        }
-        
-        if let url,
-           let validURL = URL(string: url) {
-            
-            if let image = self.imageCacheService.image(for: recipe.id) {
-                
-                print("FETCHED FROM CACHE: \(recipe.name)")
-                return image
-                
-            }
-            
-            let image = try await apiService.getImage(url: validURL)
-            self.imageCacheService.insertImage(image, for: recipe.id)
-            
-            print("SAVED TO CACHE: \(recipe.name)")
-            
-            return image
-            
-        }
-        
-        return nil
         
     }
     

@@ -27,6 +27,9 @@
 		751FC2BD2D5E8AEF008FA5FC /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2BC2D5E8AEC008FA5FC /* RecipeListViewModel.swift */; };
 		751FC2BF2D5E8AF4008FA5FC /* RecipeListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2BE2D5E8AF2008FA5FC /* RecipeListScreen.swift */; };
 		751FC2C42D5E936A008FA5FC /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2C32D5E9368008FA5FC /* RecipeView.swift */; };
+		75B53D092D5ED49900AA0E86 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B53D072D5ED49900AA0E86 /* AsyncImageView.swift */; };
+		75B53D0B2D5ED69700AA0E86 /* AsyncImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B53D0A2D5ED69300AA0E86 /* AsyncImageViewModel.swift */; };
+		75B53D0E2D5ED93000AA0E86 /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B53D0D2D5ED93000AA0E86 /* OnFirstAppear.swift */; };
 		75D6D0DF2D5E9BD9006C9D0E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6D0DE2D5E9BD3006C9D0E /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,9 @@
 		751FC2BC2D5E8AEC008FA5FC /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
 		751FC2BE2D5E8AF2008FA5FC /* RecipeListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListScreen.swift; sourceTree = "<group>"; };
 		751FC2C32D5E9368008FA5FC /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		75B53D072D5ED49900AA0E86 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		75B53D0A2D5ED69300AA0E86 /* AsyncImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageViewModel.swift; sourceTree = "<group>"; };
+		75B53D0D2D5ED93000AA0E86 /* OnFirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppear.swift; sourceTree = "<group>"; };
 		75D6D0DE2D5E9BD3006C9D0E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +182,7 @@
 		751FC28C2D5E7E02008FA5FC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				75B53D082D5ED49900AA0E86 /* AsyncImageView */,
 				75D6D0DE2D5E9BD3006C9D0E /* LoadingView.swift */,
 				751FC2AF2D5E83A5008FA5FC /* AppButton.swift */,
 				751FC2AB2D5E8309008FA5FC /* CardView.swift */,
@@ -206,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				751FC2A02D5E81F0008FA5FC /* Mockable.swift */,
+				75B53D0C2D5ED92C00AA0E86 /* View Modifiers */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -256,6 +264,23 @@
 				751FC2C32D5E9368008FA5FC /* RecipeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		75B53D082D5ED49900AA0E86 /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				75B53D0A2D5ED69300AA0E86 /* AsyncImageViewModel.swift */,
+				75B53D072D5ED49900AA0E86 /* AsyncImageView.swift */,
+			);
+			path = AsyncImageView;
+			sourceTree = "<group>";
+		};
+		75B53D0C2D5ED92C00AA0E86 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				75B53D0D2D5ED93000AA0E86 /* OnFirstAppear.swift */,
+			);
+			path = "View Modifiers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,9 +426,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B53D0E2D5ED93000AA0E86 /* OnFirstAppear.swift in Sources */,
+				75B53D0B2D5ED69700AA0E86 /* AsyncImageViewModel.swift in Sources */,
 				751FC2A82D5E8289008FA5FC /* Shadow.swift in Sources */,
 				751FC2BA2D5E8A4E008FA5FC /* ImageCacheServiceMock.swift in Sources */,
 				751FC2B82D5E8A38008FA5FC /* ImageCacheService.swift in Sources */,
+				75B53D092D5ED49900AA0E86 /* AsyncImageView.swift in Sources */,
 				751FC2AE2D5E8354008FA5FC /* CornerRadius.swift in Sources */,
 				751FC2882D5E7DA7008FA5FC /* FetchTakeHomeApp.swift in Sources */,
 				751FC2B62D5E8A1A008FA5FC /* ImageCacheServiceProtocol.swift in Sources */,

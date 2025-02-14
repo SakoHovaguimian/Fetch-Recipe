@@ -12,6 +12,10 @@ struct RecipeView: View {
     private let recipe: Recipe
     private let urlAction: ((String) -> ())
     
+    var photoURL: String? {
+        return recipe.photoURLLarge ?? recipe.photoURLSmall
+    }
+    
     init(recipe: Recipe,
          urlAction: @escaping ((String) -> ())) {
         
@@ -26,7 +30,10 @@ struct RecipeView: View {
             
             HStack(spacing: Spacing.medium.value) {
                 
-                image()
+                if let photoURL {
+                    image(url: photoURL)
+                }
+                
                 information()
                 
             }
@@ -36,24 +43,12 @@ struct RecipeView: View {
         
     }
     
-    private func image() -> some View {
+    private func image(url: String) -> some View {
         
-        Group {
-            
-            if let image = recipe.image {
-                
-                Image(uiImage: image)
-                    .resizable()
-                
-                
-            }
-            else {
-                
-                placeholderImage()
-                
-            }
-            
-        }
+        AsyncImageView(
+            id: recipe.id,
+            url: url
+        )
         .aspectRatio(contentMode: .fit)
         .frame(width: 120, height: 120)
         .cornerRadius(.small)
@@ -132,22 +127,6 @@ struct RecipeView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         
-    }
-    
-    private func placeholderImage() -> some View {
-        
-        Rectangle()
-            .fill(Color(uiColor: .systemGray6))
-            .overlay {
-                
-                Image(systemName: "photo.on.rectangle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 64, height: 64)
-                    .foregroundStyle(.black)
-                
-            }
-
     }
     
 }
