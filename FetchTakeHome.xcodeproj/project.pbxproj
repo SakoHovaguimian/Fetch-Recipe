@@ -6,6 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		751FC2852D5E7DA7008FA5FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751FC27C2D5E7DA7008FA5FC /* Preview Assets.xcassets */; };
+		751FC2862D5E7DA7008FA5FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751FC27E2D5E7DA7008FA5FC /* Assets.xcassets */; };
+		751FC2882D5E7DA7008FA5FC /* FetchTakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2832D5E7DA7008FA5FC /* FetchTakeHomeApp.swift */; };
+		751FC28F2D5E7E0F008FA5FC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC28E2D5E7E0D008FA5FC /* Recipe.swift */; };
+		751FC29D2D5E81EC008FA5FC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2992D5E81EC008FA5FC /* APIService.swift */; };
+		751FC29E2D5E81EC008FA5FC /* APIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC29A2D5E81EC008FA5FC /* APIServiceMock.swift */; };
+		751FC29F2D5E81EC008FA5FC /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC29B2D5E81EC008FA5FC /* APIServiceProtocol.swift */; };
+		751FC2A22D5E81F0008FA5FC /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2A02D5E81F0008FA5FC /* Mockable.swift */; };
+		751FC2A62D5E827E008FA5FC /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2A52D5E827E008FA5FC /* Spacing.swift */; };
+		751FC2A82D5E8289008FA5FC /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2A72D5E8289008FA5FC /* Shadow.swift */; };
+		751FC2AA2D5E8293008FA5FC /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2A92D5E8293008FA5FC /* AppFont.swift */; };
+		751FC2AC2D5E830B008FA5FC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2AB2D5E8309008FA5FC /* CardView.swift */; };
+		751FC2AE2D5E8354008FA5FC /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2AD2D5E8354008FA5FC /* CornerRadius.swift */; };
+		751FC2B02D5E83AB008FA5FC /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2AF2D5E83A5008FA5FC /* AppButton.swift */; };
+		751FC2B62D5E8A1A008FA5FC /* ImageCacheServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2B52D5E8A17008FA5FC /* ImageCacheServiceProtocol.swift */; };
+		751FC2B82D5E8A38008FA5FC /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2B72D5E8A35008FA5FC /* ImageCacheService.swift */; };
+		751FC2BA2D5E8A4E008FA5FC /* ImageCacheServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2B92D5E8A49008FA5FC /* ImageCacheServiceMock.swift */; };
+		751FC2BD2D5E8AEF008FA5FC /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2BC2D5E8AEC008FA5FC /* RecipeListViewModel.swift */; };
+		751FC2BF2D5E8AF4008FA5FC /* RecipeListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2BE2D5E8AF2008FA5FC /* RecipeListScreen.swift */; };
+		751FC2C42D5E936A008FA5FC /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FC2C32D5E9368008FA5FC /* RecipeView.swift */; };
+		75D6D0DF2D5E9BD9006C9D0E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6D0DE2D5E9BD3006C9D0E /* LoadingView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		751FC25E2D5E7D1D008FA5FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +51,31 @@
 		751FC24C2D5E7D1C008FA5FC /* FetchTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751FC25D2D5E7D1D008FA5FC /* FetchTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		751FC2672D5E7D1D008FA5FC /* FetchTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		751FC27C2D5E7DA7008FA5FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		751FC27E2D5E7DA7008FA5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		751FC27F2D5E7DA7008FA5FC /* FetchTakeHome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FetchTakeHome.entitlements; sourceTree = "<group>"; };
+		751FC2832D5E7DA7008FA5FC /* FetchTakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTakeHomeApp.swift; sourceTree = "<group>"; };
+		751FC28E2D5E7E0D008FA5FC /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		751FC2992D5E81EC008FA5FC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		751FC29A2D5E81EC008FA5FC /* APIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMock.swift; sourceTree = "<group>"; };
+		751FC29B2D5E81EC008FA5FC /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		751FC2A02D5E81F0008FA5FC /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		751FC2A52D5E827E008FA5FC /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		751FC2A72D5E8289008FA5FC /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		751FC2A92D5E8293008FA5FC /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		751FC2AB2D5E8309008FA5FC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		751FC2AD2D5E8354008FA5FC /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		751FC2AF2D5E83A5008FA5FC /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		751FC2B52D5E8A17008FA5FC /* ImageCacheServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheServiceProtocol.swift; sourceTree = "<group>"; };
+		751FC2B72D5E8A35008FA5FC /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
+		751FC2B92D5E8A49008FA5FC /* ImageCacheServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheServiceMock.swift; sourceTree = "<group>"; };
+		751FC2BC2D5E8AEC008FA5FC /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		751FC2BE2D5E8AF2008FA5FC /* RecipeListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListScreen.swift; sourceTree = "<group>"; };
+		751FC2C32D5E9368008FA5FC /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		75D6D0DE2D5E9BD3006C9D0E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		751FC24E2D5E7D1C008FA5FC /* FetchTakeHome */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FetchTakeHome;
-			sourceTree = "<group>";
-		};
 		751FC2602D5E7D1D008FA5FC /* FetchTakeHomeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FetchTakeHomeTests;
@@ -75,7 +116,7 @@
 		751FC2432D5E7D1C008FA5FC = {
 			isa = PBXGroup;
 			children = (
-				751FC24E2D5E7D1C008FA5FC /* FetchTakeHome */,
+				751FC2842D5E7DA7008FA5FC /* FetchTakeHome */,
 				751FC2602D5E7D1D008FA5FC /* FetchTakeHomeTests */,
 				751FC26A2D5E7D1D008FA5FC /* FetchTakeHomeUITests */,
 				751FC24D2D5E7D1C008FA5FC /* Products */,
@@ -92,6 +133,131 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		751FC27D2D5E7DA7008FA5FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				751FC27C2D5E7DA7008FA5FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		751FC2802D5E7DA7008FA5FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				751FC27D2D5E7DA7008FA5FC /* Preview Content */,
+				751FC27E2D5E7DA7008FA5FC /* Assets.xcassets */,
+				751FC27F2D5E7DA7008FA5FC /* FetchTakeHome.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		751FC2812D5E7DA7008FA5FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				751FC29C2D5E81EC008FA5FC /* APIService */,
+				751FC2B42D5E8A0A008FA5FC /* ImageCache */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		751FC2842D5E7DA7008FA5FC /* FetchTakeHome */ = {
+			isa = PBXGroup;
+			children = (
+				751FC2812D5E7DA7008FA5FC /* Services */,
+				751FC28D2D5E7E08008FA5FC /* Models */,
+				751FC2A12D5E81F0008FA5FC /* Helpers */,
+				751FC28C2D5E7E02008FA5FC /* Components */,
+				751FC2802D5E7DA7008FA5FC /* Resources */,
+				751FC2A32D5E8256008FA5FC /* Screens */,
+			);
+			path = FetchTakeHome;
+			sourceTree = "<group>";
+		};
+		751FC28C2D5E7E02008FA5FC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				75D6D0DE2D5E9BD3006C9D0E /* LoadingView.swift */,
+				751FC2AF2D5E83A5008FA5FC /* AppButton.swift */,
+				751FC2AB2D5E8309008FA5FC /* CardView.swift */,
+				751FC2A42D5E8271008FA5FC /* AppStyling */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		751FC28D2D5E7E08008FA5FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				751FC28E2D5E7E0D008FA5FC /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		751FC29C2D5E81EC008FA5FC /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				751FC2992D5E81EC008FA5FC /* APIService.swift */,
+				751FC29A2D5E81EC008FA5FC /* APIServiceMock.swift */,
+				751FC29B2D5E81EC008FA5FC /* APIServiceProtocol.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		751FC2A12D5E81F0008FA5FC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				751FC2A02D5E81F0008FA5FC /* Mockable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		751FC2A32D5E8256008FA5FC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				751FC2BB2D5E8AE5008FA5FC /* RecipeList */,
+				751FC2832D5E7DA7008FA5FC /* FetchTakeHomeApp.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		751FC2A42D5E8271008FA5FC /* AppStyling */ = {
+			isa = PBXGroup;
+			children = (
+				751FC2A92D5E8293008FA5FC /* AppFont.swift */,
+				751FC2AD2D5E8354008FA5FC /* CornerRadius.swift */,
+				751FC2A72D5E8289008FA5FC /* Shadow.swift */,
+				751FC2A52D5E827E008FA5FC /* Spacing.swift */,
+			);
+			path = AppStyling;
+			sourceTree = "<group>";
+		};
+		751FC2B42D5E8A0A008FA5FC /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				751FC2B72D5E8A35008FA5FC /* ImageCacheService.swift */,
+				751FC2B92D5E8A49008FA5FC /* ImageCacheServiceMock.swift */,
+				751FC2B52D5E8A17008FA5FC /* ImageCacheServiceProtocol.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		751FC2BB2D5E8AE5008FA5FC /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				751FC2BC2D5E8AEC008FA5FC /* RecipeListViewModel.swift */,
+				751FC2BE2D5E8AF2008FA5FC /* RecipeListScreen.swift */,
+				751FC2C12D5E9351008FA5FC /* Views */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		751FC2C12D5E9351008FA5FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				751FC2C32D5E9368008FA5FC /* RecipeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +272,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				751FC24E2D5E7D1C008FA5FC /* FetchTakeHome */,
 			);
 			name = FetchTakeHome;
 			packageProductDependencies = (
@@ -212,6 +375,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751FC2852D5E7DA7008FA5FC /* Preview Assets.xcassets in Resources */,
+				751FC2862D5E7DA7008FA5FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +401,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751FC2A82D5E8289008FA5FC /* Shadow.swift in Sources */,
+				751FC2BA2D5E8A4E008FA5FC /* ImageCacheServiceMock.swift in Sources */,
+				751FC2B82D5E8A38008FA5FC /* ImageCacheService.swift in Sources */,
+				751FC2AE2D5E8354008FA5FC /* CornerRadius.swift in Sources */,
+				751FC2882D5E7DA7008FA5FC /* FetchTakeHomeApp.swift in Sources */,
+				751FC2B62D5E8A1A008FA5FC /* ImageCacheServiceProtocol.swift in Sources */,
+				751FC29D2D5E81EC008FA5FC /* APIService.swift in Sources */,
+				751FC2BD2D5E8AEF008FA5FC /* RecipeListViewModel.swift in Sources */,
+				751FC29E2D5E81EC008FA5FC /* APIServiceMock.swift in Sources */,
+				751FC29F2D5E81EC008FA5FC /* APIServiceProtocol.swift in Sources */,
+				751FC2AA2D5E8293008FA5FC /* AppFont.swift in Sources */,
+				751FC2C42D5E936A008FA5FC /* RecipeView.swift in Sources */,
+				751FC2A62D5E827E008FA5FC /* Spacing.swift in Sources */,
+				75D6D0DF2D5E9BD9006C9D0E /* LoadingView.swift in Sources */,
+				751FC2B02D5E83AB008FA5FC /* AppButton.swift in Sources */,
+				751FC2A22D5E81F0008FA5FC /* Mockable.swift in Sources */,
+				751FC2AC2D5E830B008FA5FC /* CardView.swift in Sources */,
+				751FC28F2D5E7E0F008FA5FC /* Recipe.swift in Sources */,
+				751FC2BF2D5E8AF4008FA5FC /* RecipeListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,10 +572,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FetchTakeHome/FetchTakeHome.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FetchTakeHome/Resources/FetchTakeHome.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FetchTakeHome/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FetchTakeHome/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = QNK29NH27H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -406,7 +590,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -427,10 +611,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FetchTakeHome/FetchTakeHome.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FetchTakeHome/Resources/FetchTakeHome.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FetchTakeHome/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FetchTakeHome/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = QNK29NH27H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -445,7 +629,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
